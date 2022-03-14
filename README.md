@@ -10,7 +10,7 @@ A file is read with a list of words and after processing the result is written t
 - Moq
 - FluentAssertions
 
-#This project follow the SOLID principles with separation of responsabilities, dependency injection, interface segregation, open closed principle.
+#This project follow the SOLID principles with separation of responsabilities, dependency injection, interface segregation, open closed principle and TDD.
 
 #Domain, services and repositories are implemented
 
