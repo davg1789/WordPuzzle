@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using WordPuzzle.Service.Implementaiton;
-using WordPuzzle.Service.Interface;
+using WordPuzzle.Repositories.Implementaiton;
+using WordPuzzle.Repositories.Interface;
+using WordPuzzle.Services.Implementaiton;
+using WordPuzzle.Services.Interface;
 
 namespace WordPuzzle.Configuration
 {
@@ -9,6 +11,7 @@ namespace WordPuzzle.Configuration
         public static void ConfigureDI(this IServiceCollection services)
         {
             services.AddScoped<IWordPuzzleService, WordPuzzleService>();
+            services.AddScoped<IWordPuzzleRepository, WordPuzzleRepository>();
         }
 
         public static IWordPuzzleService GetWordPuzzleServiceInstance()
